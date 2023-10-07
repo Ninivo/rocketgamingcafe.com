@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Cafe </title>
+<link rel="stylesheet" href="rocketcafe.css">
+<script> 
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</head>
+<body>
+<header>
+<nav>
+<div class="banner">
+<h1> Rocket Gaming Menu </h1>
+</div>
+<div class="cafenav">
+<a  href="cafe.html">Home</a>
+<a  class="active" href="thecafe.html">Menu</a>
+<a  href="GamingGroups.html">Gaming Groups</a>
+<a  href="MembershipBenefits.html">Membership</a>
+<a  href="Benefit.html">Benefits</a>
+<a  href="QNA.html">QnA</a>
+<a  href="Discussion.html">Create an account</a>
+</div>
+</nav>
+
+ </header>
+<blockquote>
+<h3> Marking Mars! </h3>
+<blockquote>
+<p> Mark your place on Mars with our newest Mars Mango Black Tea! Sip the perfect harmony of rich black tea and luscious mango. </p></blockquote>
+
+
+<h3> Soaring to Saturn! </h3>
+<blockquote>
+<p> Soar to Saturn with Saturn Strawberry Green tea! Taste Saturns' delight with the mix of strawberries and green tea.</p></blockquote>
+
+<h3> Venturing to Venus! </h3>
+<blockquote>
+<p> Venture to Venus with Vietnamese Coffee. Get your caffeine up with the bitter sweetness of Vietnamese coffee.  </p></blockquote>
+
+<h3> Galaxy Lattes </h3>
+
+
+<h4>Making Meteor </h3>
+<p> Sweet, creamy, spiced tea with our signature milk blend. </p>
+
+<h4>Stardust Blaze</h4>
+<p> Drink this one slowly, folks. This one's smoky, sweet, and will keep you up. </p>
+
+<h3> Floating Foods </h3>
+
+<h4>Shooting Star Spaghetti </h4>
+<p> Our tangy tomato sauce with edible glitter will make you mindblown </p>
+
+<h4> Blackhole Donut </h4>
+<p> Donut enter blackholes, but definitely try our Blackhole Donuts! </p>
+
+<h4> Interstellar pizza </h4>
+<p> Try our Interstellar-inspired pizza! </p><br>
+
+<!-- Trigger the Modal -->
+<img id="myImg" src="https://i.pinimg.com/originals/2d/d7/be/2dd7beb4a22b5d954d03249b6605143e.jpg" alt="Interstellar Pizza" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="Delicious Pizza"></div>
+</div>
+<br>
+
+</body>
+</html>
